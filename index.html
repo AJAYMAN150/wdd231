@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course Home — WDD231</title>
+  <meta name="description" content="Course home page for WDD231: Web & Computer Programming certificate courses, syllabus links, and course progress." />
+  <meta name="author" content="Alfred J. Vaka Jr." />
+
+  <!-- Google Font (one family as required) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Normalize (optional) then small + large styles -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Defer scripts -->
+  <script defer src="scripts/navigation.js"></script>
+  <script defer src="scripts/date.js"></script>
+  <script defer src="scripts/course.js"></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- site logo (SVG file stored in images folder) -->
+      <a href="./" class="logo" aria-label="Course Home">
+        <img src="images/AJV.svg" alt="Site logo" width="64" height="64">
+        <span class="your-name">Alfred J. Vaka Jr.</span>
+      </a>
+
+      <!-- hamburger for small screens -->
+      <button id="menuToggle" class="hamburger" aria-controls="primaryNav" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav id="primaryNav" class="primary-nav" role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="chamber/index.html" class="nav-link">Chamber</a></li>
+          <li><a href="final/index.html" class="nav-link">Final</a></li>
+          <li><a href="https://github.com/AJAYMAN150/wdd231" class="nav-link" target="_blank" rel="noopener noreferrer">Repository</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-main" role="main">
+    <h1>Home</h1>
+
+    <!-- Section 1: Welcome / Overview -->
+    <section id="overview" class="card">
+      <h2>Overview</h2>
+      <p>Welcome to the Web & Computer Programming certificate — this page demonstrates HTML, CSS, and JavaScript skills for WDD231.</p>
+    </section>
+
+    <!-- Section 2: Courses -->
+    <section id="courses" class="card">
+      <h2>Courses</h2>
+
+      <div class="controls" aria-hidden="false">
+        <label for="filterButtons" class="visually-hidden">Filter courses</label>
+        <div id="filterButtons" role="toolbar" aria-label="Filter courses">
+          <button data-filter="all" class="filter-btn active">All Courses</button>
+          <button data-filter="WDD" class="filter-btn">WDD Courses</button>
+          <button data-filter="CSE" class="filter-btn">CSE Courses</button>
+        </div>
+      </div>
+
+      <div id="credits" aria-live="polite" class="credits">Total credits: <span id="totalCredits">0</span></div>
+
+      <div id="coursesList" class="courses-grid" aria-live="polite">
+        <!-- course cards injected by scripts/course.js -->
+      </div>
+    </section>
+
+    <!-- Section 3: Resources -->
+    <section id="resources" class="card">
+      <h2>Resources</h2>
+      <p>Links, reading materials, and project instructions will go here.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="socials">
+        <a href="https://github.com/your-github-username" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/your-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#" aria-label="Other social">Other</a>
+      </div>
+
+      <div class="copyright">
+        <p id="copyright">
+          &copy; <span id="copyrightYear"></span> Alfred J. Vaka Jr.
+        </p>
+        <p id="location">Hawaii / U.S.A.</p>
+      </div>
+
+      <div class="last-modified">
+        <p>Last modified: <span id="lastModified">--</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accessible skip link (optional improvement) -->
+  <a class="skip-link" href="#main">Skip to content</a>
+</body>
+</html>

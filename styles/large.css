@@ -1,0 +1,28 @@
+/* large.css - larger screens + breakpoints */
+
+/* Base overrides for larger screens */
+@media (min-width: 700px) {
+  .header-inner{padding:1rem; gap:2rem}
+  .hamburger{display:none} /* hide hamburger on larger screens */
+  .primary-nav{
+    position:static;
+    display:block;
+    border:0;
+    box-shadow:none;
+    background:transparent;
+    padding:0;
+  }
+  .primary-nav ul{display:flex; gap:1rem; align-items:center}
+  .primary-nav a{padding:.5rem .75rem}
+}
+
+@media (min-width:900px){
+  .page-main{display:grid; grid-template-columns: 1fr 380px; gap:1.25rem}
+  .card{padding:1.25rem}
+  .courses-grid{grid-template-columns: repeat(2, 1fr)}
+}
+
+@media (min-width:1200px){
+  .page-main{grid-template-columns: 1fr 360px}
+  .course-card{align-items:center}
+}
