@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Island Fresh Grocery",
+    "address": "Taufaʻahau Road, Nukuʻalofa, Tongatapu",
+    "phone": "+676 22110",
+    "website": "https://islandfresh.to",
+    "image": "islandfresh.png",
+    "membership": 3,
+    "category": "Grocery Store"
+  },
+  {
+    "name": "Kava Kingdom",
+    "address": "Tofoa Village, Tongatapu",
+    "phone": "+676 55678",
+    "website": "https://kavakingdom.to",
+    "image": "kavakingdom.png",
+    "membership": 2,
+    "category": "Kava Bar"
+  },
+  {
+    "name": "TongaCare Drug Store",
+    "address": "Fasi-moe-Afi, Nukuʻalofa",
+    "phone": "+676 33445",
+    "website": "https://tongacare.to",
+    "image": "tongacare.png",
+    "membership": 1,
+    "category": "Pharmacy"
+  },
+  {
+    "name": "Corner Stop Market",
+    "address": "Haveluloto, Tongatapu",
+    "phone": "+676 77884",
+    "website": "https://cornerstop.to",
+    "image": "cornerstop.png",
+    "membership": 1,
+    "category": "Convenience Store"
+  },
+  {
+    "name": "Pacific Threads Clothing",
+    "address": "Salamāsī, Nukuʻalofa",
+    "phone": "+676 88992",
+    "website": "https://pacificthreads.to",
+    "image": "threads.png",
+    "membership": 2,
+    "category": "Clothing Store"
+  },
+  {
+    "name": "Makai Sea Grill",
+    "address": "Sopu Seaside, Tongatapu",
+    "phone": "+676 44221",
+    "website": "https://makaigrill.to",
+    "image": "makai.png",
+    "membership": 3,
+    "category": "Restaurant"
+  },
+  {
+    "name": "Oceanview Motel",
+    "address": "Vuna Road, Nukuʻalofa",
+    "phone": "+676 55690",
+    "website": "https://oceanviewmotel.to",
+    "image": "oceanview.png",
+    "membership": 3,
+    "category": "Motel"
+  }
+]

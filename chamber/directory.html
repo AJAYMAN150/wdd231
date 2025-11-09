@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tonga Chamber of Commerce | Member Directory</title>
+    <meta name="description" content="Member directory for the Tonga Chamber of Commerce. Browse local businesses across Tongatapu and surrounding islands.">
+    <meta name="author" content="Alfred J. Vaka Jr.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Tonga Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore local Tongan businesses in the official chamber directory.">
+    <meta property="og:image" content="https://your-github-url/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://AJAYMAN150f.github.io/wdd231/chamber/directory.html">
+
+    <!-- Reset / Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Tonga Chamber Logo">
+            <h1>Tonga Chamber of Commerce</h1>
+        </div>
+
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h1>Member Directory</h1>
+
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+
+        <article id="directory" class="grid">
+            <!-- JavaScript will insert members here -->
+        </article>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Tonga Chamber of Commerce</p>
+        <p>Nukuʻalofa, Tongatapu, Tonga</p>
+        <p>Developed by: Your Name | WDD 231</p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/directory.js"></script>
+</body>
+</html>
