@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonga Chamber of Commerce | Join</title>
+    <meta name="description" content="Join the Tonga Chamber of Commerce. Apply for membership online.">
+    <meta name="author" content="Alfred J. Vaka Jr.">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <style>
+        /* Inline minimal styles for layout and animation */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        form {
+            flex: 1 1 300px;
+            max-width: 500px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .membership-cards {
+            flex: 1 1 300px;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .membership-card {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeSlide 0.8s forwards;
+        }
+
+        .membership-card:nth-child(1) { animation-delay: 0.1s; }
+        .membership-card:nth-child(2) { animation-delay: 0.3s; }
+        .membership-card:nth-child(3) { animation-delay: 0.5s; }
+        .membership-card:nth-child(4) { animation-delay: 0.7s; }
+
+        @keyframes fadeSlide {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            max-width: 400px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 0.5rem; right: 0.5rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            main { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Tonga Chamber Logo">
+            <h1>Tonga Chamber of Commerce</h1>
+        </div>
+
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Membership Form -->
+        <form method="get" action="thankyou.html" id="joinForm">
+            <h2>Membership Application</h2>
+
+            <label>
+                First Name:
+                <input type="text" name="firstName" title="Applicant's first name" required autocomplete="given-name">
+            </label>
+
+            <label>
+                Last Name:
+                <input type="text" name="lastName" title="Applicant's last name" required autocomplete="family-name">
+            </label>
+
+            <label>
+                Organizational Title:
+                <input type="text" name="orgTitle" title="Applicant's organizational title" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" placeholder="e.g., Marketing Manager">
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" title="Applicant's email address" required autocomplete="email" placeholder="example@domain.com">
+            </label>
+
+            <label>
+                Mobile Phone:
+                <input type="tel" name="mobile" title="Applicant's mobile number" required autocomplete="tel">
+            </label>
+
+            <label>
+                Business / Organization Name:
+                <input type="text" name="businessName" title="Organization name" required autocomplete="organization">
+            </label>
+
+            <label>
+                Membership Level:
+                <select name="membership" title="Select membership level" required>
+                    <option value="np">NP Membership (No fee)</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+
+            <label>
+                Organization Description:
+                <textarea name="orgDesc" title="Organization description"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Submit Application">
+        </form>
+
+        <!-- Membership Cards -->
+        <div class="membership-cards">
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <a href="#" data-modal="npModal">View Benefits</a>
+            </div>
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <a href="#" data-modal="bronzeModal">View Benefits</a>
+            </div>
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <a href="#" data-modal="silverModal">View Benefits</a>
+            </div>
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <a href="#" data-modal="goldModal">View Benefits</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div class="modal" id="npModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h4>NP Membership Benefits</h4>
+            <ul>
+                <li>No membership fee</li>
+                <li>Access to newsletters</li>
+                <li>Networking opportunities</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="bronzeModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h4>Bronze Membership Benefits</h4>
+            <ul>
+                <li>All NP benefits</li>
+                <li>Event invitations</li>
+                <li>Advertising opportunities</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="silverModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h4>Silver Membership Benefits</h4>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Spotlight on Home Page</li>
+                <li>Discounted training events</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="goldModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h4>Gold Membership Benefits</h4>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Premium spotlight positions</li>
+                <li>Exclusive networking events</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Tonga Chamber of Commerce</p>
+        <p>Nukuʻalofa, Tongatapu, Tonga</p>
+        <p>Developed by: Alfred J. Vaka Jr. | WDD 231</p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Timestamp
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("timestamp").value = new Date().toISOString();
+
+            // Modal functionality
+            const modalLinks = document.querySelectorAll("[data-modal]");
+            const modals = document.querySelectorAll(".modal");
+            const closeButtons = document.querySelectorAll(".close-modal");
+
+            modalLinks.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const modalId = link.getAttribute("data-modal");
+                    document.getElementById(modalId).style.display = "flex";
+                });
+            });
+
+            closeButtons.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    btn.closest(".modal").style.display = "none";
+                });
+            });
+
+            window.addEventListener("click", e => {
+                if (e.target.classList.contains("modal")) {
+                    e.target.style.display = "none";
+                }
+            });
+
+            window.addEventListener("keydown", e => {
+                if (e.key === "Escape") {
+                    modals.forEach(m => m.style.display = "none");
+                }
+            });
+
+            // Footer year
+            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("last-modified").textContent = document.lastModified;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonga Chamber of Commerce | Thank You</title>
+    <meta name="description" content="Thank you for joining the Tonga Chamber of Commerce.">
+    <meta name="author" content="Alfred J. Vaka Jr.">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <style>
+        main {
+            padding: 2rem;
+        }
+
+        .thankyou-card {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .thankyou-card h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .thankyou-card p {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Tonga Chamber Logo">
+            <h1>Tonga Chamber of Commerce</h1>
+        </div>
+
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="thankyou-card">
+            <h2>Thank You for Joining!</h2>
+            <p>We appreciate your interest in the Tonga Chamber of Commerce.</p>
+
+            <h3>Your Submitted Information:</h3>
+            <p><strong>First Name:</strong> <span id="firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile Phone:</strong> <span id="mobile"></span></p>
+            <p><strong>Business / Organization Name:</strong> <span id="businessName"></span></p>
+            <p><strong>Timestamp Submitted:</strong> <span id="timestamp"></span></p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Tonga Chamber of Commerce</p>
+        <p>Nukuʻalofa, Tongatapu, Tonga</p>
+        <p>Developed by: Alfred J. Vaka Jr. | WDD 231</p>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        // Footer date info
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("last-modified").textContent = document.lastModified;
+
+        // Parse GET parameters
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("firstName").textContent = params.get("firstName") || "--";
+        document.getElementById("lastName").textContent = params.get("lastName") || "--";
+        document.getElementById("email").textContent = params.get("email") || "--";
+        document.getElementById("mobile").textContent = params.get("mobile") || "--";
+        document.getElementById("businessName").textContent = params.get("businessName") || "--";
+        document.getElementById("timestamp").textContent = params.get("timestamp") || "--";
+    </script>
+</body>
+</html>

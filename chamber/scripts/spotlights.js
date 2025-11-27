@@ -20,7 +20,8 @@ async function displaySpotlights() {
     const container = document.getElementById("spotlight-container");
 
     try {
-        const res = await fetch("members.json"); // adjust path if needed
+        // Updated path to data folder
+        const res = await fetch("./data/members.json");
         if (!res.ok) throw new Error("Failed to fetch members.json");
 
         const members = await res.json();

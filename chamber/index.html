@@ -10,11 +10,8 @@
 
     <link rel="icon" href="images/favicon.png">
 
-    <!-- Reset -->
-    <link rel="stylesheet" href="css/normalize.css">
-
     <!-- Main Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -27,7 +24,7 @@
         </div>
 
         <nav>
-            <button id="menu-toggle">☰</button>
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
             <ul id="menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -37,20 +34,17 @@
         </nav>
     </header>
 
-
     <!-- MAIN CONTENT -->
     <main>
 
         <!-- HERO SECTION -->
         <section class="hero">
-            <img src="images/hero.jpg" alt="Tonga Islands" class="hero-img">
-
+            <img src="images/hero.jpg" alt="Beautiful Tonga Islands" class="hero-img">
             <div class="hero-text">
                 <h2>Supporting Business in Tonga</h2>
                 <a href="join.html" class="cta-btn">Join the Chamber</a>
             </div>
         </section>
-
 
         <!-- CURRENT EVENTS SECTION -->
         <section class="events">
@@ -63,39 +57,36 @@
 
             <div class="event-card">
                 <h3>Small Business Workshop</h3>
-                <p>Learn marketing basics and financial tools for Tongan entrepreneurs.</p>
+                <p>Learn marketing basics and financial tools designed for Tongan entrepreneurs.</p>
             </div>
         </section>
-
 
         <!-- WEATHER SECTION -->
         <section class="weather">
             <h2>Local Weather</h2>
 
             <div id="weather-today">
-                <p><strong>Temperature:</strong> <span id="current-temp"></span>°C</p>
+                <p><strong>Temperature:</strong> <span id="current-temp"></span> °C</p>
                 <p><strong>Conditions:</strong> <span id="weather-desc"></span></p>
             </div>
 
             <div class="forecast">
                 <h3>3-Day Forecast</h3>
                 <ul id="forecast-list">
-                    <!-- JS fills this -->
+                    <!-- JS Fills This -->
                 </ul>
             </div>
         </section>
-
 
         <!-- SPOTLIGHT SECTION -->
         <section class="spotlights">
             <h2>Business Spotlights</h2>
             <div id="spotlight-container">
-                <!-- JS will inject 2–3 spotlight cards here -->
+                <!-- spotlight JS inserts cards -->
             </div>
         </section>
 
     </main>
-
 
     <!-- FOOTER -->
     <footer>
@@ -106,11 +97,10 @@
         <p>Last Modified: <span id="last-modified"></span></p>
     </footer>
 
-
     <!-- SCRIPTS -->
-    <script src="js/weather.js"></script>
-    <script src="js/spotlights.js"></script>
-    <script src="js/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+    <script src="scripts/menu.js"></script>
 
 </body>
 </html>

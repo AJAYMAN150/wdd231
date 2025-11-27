@@ -14,14 +14,14 @@
     <!-- Facebook Open Graph -->
     <meta property="og:title" content="Tonga Chamber of Commerce Directory">
     <meta property="og:description" content="Explore local Tongan businesses in the official chamber directory.">
-    <meta property="og:image" content="https://your-github-url/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:image" content="images/og-image.jpg">
     <meta property="og:url" content="https://AJAYMAN150f.github.io/wdd231/chamber/directory.html">
 
-    <!-- Reset / Normalize -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Reset -->
+    <link rel="stylesheet" href="styles/">
 
     <!-- Main Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -45,17 +45,19 @@
     </header>
 
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN -->
     <main>
         <h1>Member Directory</h1>
 
+        <!-- GRID/LIST BUTTONS -->
         <div class="menu">
             <button id="grid">Grid</button>
             <button id="list">List</button>
         </div>
 
+        <!-- DIRECTORY CONTAINER -->
         <article id="directory" class="grid">
-            <!-- JavaScript will insert members here -->
+            <!-- JS inserts members here -->
         </article>
     </main>
 
@@ -70,7 +72,9 @@
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- SCRIPTS -->
     <script src="js/directory.js"></script>
+    <script src="js/menu.js"></script>
+
 </body>
 </html>
