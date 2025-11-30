@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Discover — Chamber</title>
+
+  <!-- Preserve header/nav/footer markup from your template -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- If you prefer, create a medium.css and link with a media query instead -->
+
+  <!-- MODULE script imports .mjs data and main JS -->
+  <script type="module" src="scripts/discover.js" defer></script>
+</head>
+<body>
+  <header>
+    <!-- keep your header/nav here -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="discover.html" aria-current="page">Discover</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="discover-page">
+    <section class="intro">
+      <h1>Discover Our Area</h1>
+      <p>Welcome — explore local highlights, businesses, and attractions.</p>
+    </section>
+
+    <!-- Visit message (localStorage) -->
+    <div id="visit-msg" class="visit-msg" role="status" aria-live="polite">
+      <button id="visit-close" class="visit-close" aria-label="Close visit message">&times;</button>
+      <span id="visit-text"></span>
+    </div>
+
+    <!-- Grid container for cards -->
+    <section id="cards-grid" class="cards-grid" aria-label="Local points of interest">
+      <!-- Cards populated by scripts/discover.js -->
+    </section>
+  </main>
+
+  <footer>
+    <!-- keep your footer here -->
+    <p>&copy; <span id="year"></span> Chamber of Commerce</p>
+  </footer>
+
+  <script>
+    // small non-module script for year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
