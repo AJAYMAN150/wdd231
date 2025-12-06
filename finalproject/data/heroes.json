@@ -6,7 +6,7 @@
       "role": "Vanguard",
       "difficulty": "Medium",
       "image": "images/heroes/warden.gif",
-      "description": "Balanced moveset with strong pressure and versatile chains."
+      "description": "The Warden is a well-rounded Vanguard who offers a balanced mix of offense and defense, making them approachable for new players but still rewarding at higher levels. Their versatile chains, crushing counter, and powerful shoulder bash pressure allow them to adapt to most situations. Wardens excel at maintaining steady momentum and capitalizing on opponent mistakes."
     },
     {
       "name": "Conqueror",
@@ -14,7 +14,7 @@
       "role": "Heavy",
       "difficulty": "High",
       "image": "images/heroes/conqueror.gif",
-      "description": "Defensive powerhouse with unblockables and strong bashes."
+      "description": "Conqueror is a defensive powerhouse who thrives on patience and precise timing. Their full-block stance, strong bashes, and chainable unblockables make them an intimidating wall for aggressive opponents. While learning their flow can be demanding, a skilled Conqueror can control the pace of a fight, punish unsafe decisions, and wear opponents down through consistent counterplay."
     },
     {
       "name": "Peacekeeper",
@@ -22,7 +22,7 @@
       "role": "Assassin",
       "difficulty": "High",
       "image": "images/heroes/peacekeeper.gif",
-      "description": "Fast, bleed-focused assassin with high mobility."
+      "description": "Peacekeeper is a swift, bleed-oriented Assassin who excels at darting in and out of range to punish overextensions. Her fast attacks, deflect options, and guardbreak-into-bleed combos reward players with sharp reactions and solid spacing. While fragile and unforgiving of mistakes, she becomes incredibly lethal in the hands of someone who stays unpredictable and applies constant pressure."
     },
     {
       "name": "Lawbringer",
@@ -30,7 +30,7 @@
       "role": "Hybrid",
       "difficulty": "High",
       "image": "images/heroes/lawbringer.gif",
-      "description": "Punish-heavy hero with strong counters and shove mix-ups."
+      "description": "Lawbringer focuses on punishing enemies through counters, shoves, and powerful interrupts that allow him to turn enemy aggression against them. His long reach and heavy hits make him a threat at both mid and close range. Although his kit requires careful timing and matchup knowledge, a practiced Lawbringer can shut down reckless attackers and dominate in group fights."
     },
     {
       "name": "Kensei",
@@ -38,7 +38,7 @@
       "role": "Vanguard",
       "difficulty": "Medium",
       "image": "images/heroes/kensei.gif",
-      "description": "Long-reaching moves and flowing chains with stance attacks."
+      "description": "Kensei is a Vanguard with long-reaching attacks, fluid stance transitions, and flowing chain paths that allow them to pressure opponents from multiple angles. Their soft feints and versatile top-heavy opener give room for creativity and adaptability. Kensei works especially well for players who enjoy smooth movement, spacing control, and consistently shaping the pace of engagements."
     },
     {
       "name": "Orochi",
@@ -46,7 +46,7 @@
       "role": "Assassin",
       "difficulty": "Medium",
       "image": "images/heroes/orochi.gif",
-      "description": "Reactive duelist with strong counterattacks and dodge pressure."
+      "description": "Orochi excels as a reactive duelist who capitalizes on enemy mistakes with speedy counterattacks and dodge-based pressure. Their deflects, quick lights, and storm rush keep opponents guessing while rewarding precise reads. Though vulnerable to aggressive mix-ups, Orochi thrives when played patiently, punishing overcommitments and slipping through openings with swift, punishing retaliation."
     },
     {
       "name": "Shugoki",
@@ -54,7 +54,7 @@
       "role": "Heavy",
       "difficulty": "Low",
       "image": "images/heroes/shugoki.gif",
-      "description": "High-damage powerhouse with hyper-armor attacks."
+      "description": "Shugoki is a formidable heavy brawler known for his devastating damage, hyper-armor attacks, and surprising staying power. His kit encourages trading blows and controlling space with slow but extremely threatening strikes. While his mobility is limited, Shugoki punishes careless aggression brutally and excels when positioned to absorb hits and turn them into overwhelming counterpressure."
     },
     {
       "name": "Nobushi",
@@ -62,7 +62,7 @@
       "role": "Hybrid",
       "difficulty": "High",
       "image": "images/heroes/nobushi.gif",
-      "description": "Long-range bleed specialist with strong zoning tools."
+      "description": "Nobushi specializes in long-range harassment using her naginata to apply bleed, zone control, and steady poke pressure. She excels at punishing overextensions and forcing opponents to fight on her terms. With access to dodge attacks, hidden stance, and strong soft-feints, Nobushi rewards strategic spacing and patient play while offering powerful punishment against predictable enemies."
     },
     {
       "name": "Raider",
@@ -70,7 +70,7 @@
       "role": "Vanguard",
       "difficulty": "Low",
       "image": "images/heroes/raider.gif",
-      "description": "Aggressive brawler with strong soft-feints and pressure."
+      "description": "Raider is an aggressive Vanguard known for relentless pressure, powerful soft-feints, and simple yet effective mix-ups. Their heavy attacks hit hard and come with strong options to interrupt and overwhelm opponents. Raider shines in both duels and team fights, where their ability to control engagements and maintain nonstop offense creates constant threats and openings."
     },
     {
       "name": "Berserker",
@@ -78,7 +78,7 @@
       "role": "Assassin",
       "difficulty": "High",
       "image": "images/heroes/berserker.gif",
-      "description": "Relentless chain-pressure fighter with hyper-armor lights."
+      "description": "Berserker is a relentless chain-pressure fighter built around momentum and aggression. Their ability to chain lights and heavies endlessly, supported by hyper-armor, makes them extremely dangerous at close range. Berserkers reward an unyielding playstyle, using their speed and pressure to overwhelm hesitant opponents while relying on strong reads to keep the chain going."
     },
     {
       "name": "Warlord",
@@ -86,7 +86,7 @@
       "role": "Heavy",
       "difficulty": "Medium",
       "image": "images/heroes/warlord.gif",
-      "description": "Strong defensive hero with powerful headbutt mix-ups."
+      "description": "Warlord emphasizes disciplined defense and smart counterattacks, paired with powerful headbutt mix-ups that force opponents into uncomfortable reads. His solid stamina management, strong blocks, and flexible offense make him adaptable in most situations. With patience and timing, Warlord players can shut down aggression and punish enemy mistakes with dependable, high-value openings."
     },
     {
       "name": "Valkyrie",
@@ -94,7 +94,7 @@
       "role": "Hybrid",
       "difficulty": "Medium",
       "image": "images/heroes/valkyrie.gif",
-      "description": "Balanced hero with sweeps, bashes, and versatile control."
+      "description": "Valkyrie blends an array of sweeps, bashes, and chain attacks that give her strong crowd control and solid mix-up potential. With versatile tools suited for both offense and defense, she works well in duels and team scenarios. Her kit rewards players who can read opponents effectively and weave together various attacks to maintain pressure and disrupt enemy flow."
     },
     {
       "name": "Tiandi",
@@ -102,7 +102,7 @@
       "role": "Vanguard",
       "difficulty": "Low",
       "image": "images/heroes/tiandi.jpg",
-      "description": "Mobile fighter with dodge attacks and strong defense."
+      "description": "Tiandi is a mobile Vanguard who utilizes dodge attacks, quick openers, and strong defense to stay unpredictable. Their ability to weave around attacks makes them excellent at baiting whiffs and punishing overextensions. With smooth movement and accessible tools, Tiandi is approachable for beginners while still offering depth through timing and evasive play."
     },
     {
       "name": "Shaolin",
@@ -110,7 +110,7 @@
       "role": "Hybrid",
       "difficulty": "High",
       "image": "images/heroes/shaolin.jpg",
-      "description": "Complex stance hero with powerful mix-ups."
+      "description": "Shaolin uses his unique Qi stance to create unpredictable mix-ups and transitions that constantly pressure opponents. His attacks are fast, varied, and capable of flowing into numerous options, making him dangerous in skilled hands. While his complexity requires practice and strong decision-making, Shaolin rewards players who thrive on creativity, adaptation, and mind games."
     },
     {
       "name": "Zhanhu",
@@ -118,7 +118,7 @@
       "role": "Assassin",
       "difficulty": "Medium",
       "image": "images/heroes/zhanhu.jpg",
-      "description": "Fast chains with fire attacks and strong feint pressure."
+      "description": "Zhanhu is a fast, fluid Assassin who uses elegant chained attacks, fire-enhanced finishers, and strong feint pressure to keep opponents guessing. Their mobility and quick recoveries allow them to dance around slower heroes and punish openings. Zhanhu excels at momentum-based combat, rewarding players who combine speed, pressure, and psychological mix-ups."
     },
     {
       "name": "Jiang Jun",
@@ -126,7 +126,7 @@
       "role": "Heavy",
       "difficulty": "Medium",
       "image": "images/heroes/jiangjun.jpg",
-      "description": "Powerful heavy with strong guardbreak punishes."
+      "description": "Jiang Jun is a heavy powerhouse who uses his guandao to deliver wide sweeps, powerful guardbreak punishes, and strong stamina control. His Sifu’s Poise stance grants flexibility in adapting to an opponent’s rhythm. Durable and commanding, Jiang Jun excels in group engagements while offering enough tools to hold his ground confidently in duels."
     },
     {
       "name": "Nuxia",
@@ -134,7 +134,7 @@
       "role": "Assassin",
       "difficulty": "High",
       "image": "images/heroes/nuxia.jpg",
-      "description": "An agile fighter utilizing mind games, mix-ups, and punishing defensive players with her unique hook swords."
+      "description": "Nuxia wields her unique hook swords to trap enemies in misleading mix-ups, punishing those who defend predictably. Her agility and deceptive chain paths allow her to slip through defenses and apply pressure from unexpected angles. Though demanding in terms of timing and precision, Nuxia shines when used to outthink opponents and capitalize on their reactions."
     }
   ]
 }
