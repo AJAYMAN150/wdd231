@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Honor Compendium | Heroes</title>
+  <meta name="description" content="Browse playable heroes, stats, and roles in For Honor. Includes interactive cards and detailed hero modal.">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="For Honor Compendium — Heroes">
+  <meta property="og:description" content="Browse playable heroes, stats, and roles in For Honor.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://AJAYMAN150.github.io/finalproject/heroes.html">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <h1 class="logo"><a href="index.html">For Honor Compendium</a></h1>
+
+      <button id="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation" type="button">☰</button>
+
+      <ul id="nav-links" class="nav-links" role="menu">
+        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+        <li role="none"><a role="menuitem" href="heroes.html" aria-current="page">Heroes</a></li>
+        <li role="none"><a role="menuitem" href="strategies.html">Strategies</a></li>
+        <li role="none"><a role="menuitem" href="attributions.html">Attributions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Page Intro -->
+    <section class="page-intro">
+      <h2>Heroes</h2>
+      <p>Explore hero cards below. Use filters to narrow by faction, role, or difficulty. Click a card for more details.</p>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls" aria-label="Hero Controls">
+      <label for="filter-faction">Faction:</label>
+      <select id="filter-faction" name="faction">
+        <option value="all">All</option>
+        <option value="knight">Knights</option>
+        <option value="samurai">Samurai</option>
+        <option value="viking">Vikings</option>
+        <option value="wu-lin">Wu Lin</option>
+      </select>
+
+      <label for="search-hero" class="visually-hidden">Search heroes</label>
+      <input id="search-hero" type="search" placeholder="Search heroes..." aria-label="Search heroes">
+    </section>
+
+    <!-- Hero Cards -->
+    <section id="heroes-list" class="grid" aria-live="polite">
+      <!-- JS will inject hero cards dynamically -->
+    </section>
+
+    <!-- Optional Pagination -->
+    <nav class="pagination" aria-label="Heroes pagination" hidden>
+      <!-- Pagination buttons can go here -->
+    </nav>
+  </main>
+
+  <!-- Accessible Modal -->
+  <div id="hero-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" aria-label="Close modal" type="button">✕</button>
+      <header>
+        <h2 id="modal-title">Hero Name</h2>
+        <p id="modal-subtitle">Faction • Role • Difficulty</p>
+      </header>
+
+      <div id="modal-body">
+        <!-- JS will populate stats, lore, and moves -->
+      </div>
+
+      <footer>
+        <button class="modal-close-secondary" type="button">Close</button>
+      </footer>
+    </div>
+    <div class="modal-overlay" tabindex="-1"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 For Honor Compendium</p>
+    <a href="video-demo.html">Video Demo</a>
+    <a href="attributions.html">Attributions</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="scripts/heroes.js"></script>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+{
+  "heroes": [
+    {
+      "name": "Warden",
+      "faction": "Knights",
+      "role": "Vanguard",
+      "difficulty": "Medium",
+      "image": "images/heroes/warden.gif",
+      "description": "Balanced moveset with strong pressure and versatile chains."
+    },
+    {
+      "name": "Conqueror",
+      "faction": "Knights",
+      "role": "Heavy",
+      "difficulty": "High",
+      "image": "images/heroes/conqueror.gif",
+      "description": "Defensive powerhouse with unblockables and strong bashes."
+    },
+    {
+      "name": "Peacekeeper",
+      "faction": "Knights",
+      "role": "Assassin",
+      "difficulty": "High",
+      "image": "images/heroes/peacekeeper.gif",
+      "description": "Fast, bleed-focused assassin with high mobility."
+    },
+    {
+      "name": "Lawbringer",
+      "faction": "Knights",
+      "role": "Hybrid",
+      "difficulty": "High",
+      "image": "images/heroes/lawbringer.gif",
+      "description": "Punish-heavy hero with strong counters and shove mix-ups."
+    },
+    {
+      "name": "Kensei",
+      "faction": "Samurai",
+      "role": "Vanguard",
+      "difficulty": "Medium",
+      "image": "images/heroes/kensei.gif",
+      "description": "Long-reaching moves and flowing chains with stance attacks."
+    },
+    {
+      "name": "Orochi",
+      "faction": "Samurai",
+      "role": "Assassin",
+      "difficulty": "Medium",
+      "image": "images/heroes/orochi.gif",
+      "description": "Reactive duelist with strong counterattacks and dodge pressure."
+    },
+    {
+      "name": "Shugoki",
+      "faction": "Samurai",
+      "role": "Heavy",
+      "difficulty": "Low",
+      "image": "images/heroes/shugoki.gif",
+      "description": "High-damage powerhouse with hyper-armor attacks."
+    },
+    {
+      "name": "Nobushi",
+      "faction": "Samurai",
+      "role": "Hybrid",
+      "difficulty": "High",
+      "image": "images/heroes/nobushi.gif",
+      "description": "Long-range bleed specialist with strong zoning tools."
+    },
+    {
+      "name": "Raider",
+      "faction": "Vikings",
+      "role": "Vanguard",
+      "difficulty": "Low",
+      "image": "images/heroes/raider.gif",
+      "description": "Aggressive brawler with strong soft-feints and pressure."
+    },
+    {
+      "name": "Berserker",
+      "faction": "Vikings",
+      "role": "Assassin",
+      "difficulty": "High",
+      "image": "images/heroes/berserker.gif",
+      "description": "Relentless chain-pressure fighter with hyper-armor lights."
+    },
+    {
+      "name": "Warlord",
+      "faction": "Vikings",
+      "role": "Heavy",
+      "difficulty": "Medium",
+      "image": "images/heroes/warlord.gif",
+      "description": "Strong defensive hero with powerful headbutt mix-ups."
+    },
+    {
+      "name": "Valkyrie",
+      "faction": "Vikings",
+      "role": "Hybrid",
+      "difficulty": "Medium",
+      "image": "images/heroes/valkyrie.gif",
+      "description": "Balanced hero with sweeps, bashes, and versatile control."
+    },
+    {
+      "name": "Tiandi",
+      "faction": "Wu Lin",
+      "role": "Vanguard",
+      "difficulty": "Low",
+      "image": "images/heroes/tiandi.jpg",
+      "description": "Mobile fighter with dodge attacks and strong defense."
+    },
+    {
+      "name": "Shaolin",
+      "faction": "Wu Lin",
+      "role": "Hybrid",
+      "difficulty": "High",
+      "image": "images/heroes/shaolin.jpg",
+      "description": "Complex stance hero with powerful mix-ups."
+    },
+    {
+      "name": "Zhanhu",
+      "faction": "Wu Lin",
+      "role": "Assassin",
+      "difficulty": "Medium",
+      "image": "images/heroes/zhanhu.jpg",
+      "description": "Fast chains with fire attacks and strong feint pressure."
+    },
+    {
+      "name": "Jiang Jun",
+      "faction": "Wu Lin",
+      "role": "Heavy",
+      "difficulty": "Medium",
+      "image": "images/heroes/jiangjun.jpg",
+      "description": "Powerful heavy with strong guardbreak punishes."
+    },
+    {
+      "name": "Nuxia",
+      "faction": "Wu Lin",
+      "role": "Assassin",
+      "difficulty": "High",
+      "image": "images/heroes/nuxia.jpg",
+      "description": "An agile fighter utilizing mind games, mix-ups, and punishing defensive players with her unique hook swords."
+    }
+  ]
+}

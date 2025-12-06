@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>For Honor Compendium | Strategies</title>
+  <meta name="description" content="Tactical guides and counters for For Honor — duels, dominion, and team play.">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="For Honor Compendium — Strategies">
+  <meta property="og:description" content="Tactical guides and counters for For Honor — duels, dominion, and team play.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-strategies.jpg">
+  <meta property="og:url" content="https://yourgithub.io/final/strategies.html">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="index.html">For Honor Compendium</a>
+      <button id="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation">☰</button>
+
+      <ul id="nav-links" class="nav-links" role="menu">
+        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+        <li role="none"><a role="menuitem" href="heroes.html">Heroes</a></li>
+        <li role="none"><a role="menuitem" href="strategies.html" aria-current="page">Strategies</a></li>
+        <li role="none"><a role="menuitem" href="attributions.html">Attributions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="page-intro">
+      <h1>Strategies & Counters</h1>
+      <p>Guides for duels, team modes, and objective play. Use the form below to submit a tactic you'd like to share — submissions will be displayed on the form-action page.</p>
+    </section>
+
+    <section class="strategy-list" aria-label="Core strategies">
+      <article class="strategy">
+        <h2>Duels — Pressure vs. Punish</h2>
+        <p>Master spacing, feints, and stamina management to outplay your opponent in one-on-one combat.</p>
+      </article>
+
+      <article class="strategy">
+        <h2>Dominion — Objective Priority</h2>
+        <p>Focus on capturing and rotating objectives efficiently while supporting teammates for victory.</p>
+      </article>
+
+      <article class="strategy">
+        <h2>Team Play — Coordination & Timing</h2>
+        <p>Communicate effectively, synchronize attacks, and manage respawns for team dominance.</p>
+      </article>
+
+      <!-- Optional dynamic list injected by JS -->
+      <section id="community-strats" aria-live="polite">
+        <!-- JS can append community-submitted strategies or saved favorites here -->
+      </section>
+    </section>
+
+    <section class="submit-strat">
+      <h2>Share a Strategy</h2>
+      <form id="strategy-form" action="form-action.html" method="get" novalidate>
+        <label for="author">Your name</label>
+        <input id="author" name="author" type="text" required>
+
+        <label for="faction">Relevant faction</label>
+        <select id="faction" name="faction">
+          <option value="any">Any</option>
+          <option value="knight">Knight</option>
+          <option value="samurai">Samurai</option>
+          <option value="viking">Viking</option>
+          <option value="wu-lin">Wu Lin</option>
+        </select>
+
+        <label for="mode">Game mode</label>
+        <input id="mode" name="mode" type="text" placeholder="e.g. Duel, Dominion">
+
+        <label for="strategy">Strategy / Tip</label>
+        <textarea id="strategy" name="strategy" rows="6" required></textarea>
+
+        <button type="submit">Submit Strategy</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 For Honor Compendium</p>
+    <a href="video-demo.html">Video Demo</a>
+    <a href="attributions.html">Attributions</a>
+    <a href="index.html">Home</a>
+  </footer>
+
+  <script type="module" src="scripts/strategies.js"></script>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

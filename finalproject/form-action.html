@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>For Honor Compendium | Strategy Submission</title>
+  <meta name="description" content="Displays your submitted For Honor strategy.">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Strategy Submission Result">
+  <meta property="og:description" content="View your submitted strategy details.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-strategies.jpg">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="index.html">For Honor Compendium</a>
+
+      <button id="hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation">☰</button>
+
+      <ul id="nav-links" class="nav-links" role="menu">
+        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+        <li role="none"><a role="menuitem" href="heroes.html">Heroes</a></li>
+        <li role="none"><a role="menuitem" href="strategies.html">Strategies</a></li>
+        <li role="none"><a role="menuitem" href="attributions.html">Attributions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="page-intro">
+      <h1>Your Strategy Submission</h1>
+      <p>Below is the information you submitted. You may go back to the Strategies page to submit another entry.</p>
+    </section>
+
+    <section class="submitted-data">
+      <h2>Submitted Details</h2>
+
+      <!-- Table that displays GET data -->
+      <table aria-label="Submitted strategy information">
+        <tbody id="results-table">
+          <!-- JavaScript will populate fields here -->
+        </tbody>
+      </table>
+    </section>
+
+    <p><a href="strategies.html">⟵ Back to Strategies</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 For Honor Compendium</p>
+    <a href="video-demo.html">Video Demo</a>
+    <a href="attributions.html">Attributions</a>
+  </footer>
+
+  <script>
+    // Extract GET parameters and display them
+    const params = new URLSearchParams(window.location.search);
+    const table = document.getElementById("results-table");
+
+    params.forEach((value, key) => {
+      const row = document.createElement("tr");
+
+      const keyCell = document.createElement("th");
+      keyCell.textContent = key;
+      keyCell.style.textTransform = "capitalize";
+
+      const valueCell = document.createElement("td");
+      valueCell.textContent = value;
+
+      row.appendChild(keyCell);
+      row.appendChild(valueCell);
+      table.appendChild(row);
+    });
+  </script>
+</body>
+</html>
